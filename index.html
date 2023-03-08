@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100&family=Sacramento&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-div">
+        <!-- Welcome page -->
+        <div class="center-div intro">
+          <h1 class="heading-text">Welcome</h1>
+        </div>
+
+        <!-- Search Page -->
+        <div class="center-div" id="search-bar" style="opacity: 0">
+          <div
+            class="form"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <input
+              id="search"
+              type="search"
+              name="topic"
+              placeholder="Search"
+              class="form-control form-input"
+              required
+            />
+            <span class="search-icon left-pan n"
+              ><i class="glass fa-solid fa-magnifying-glass"></i
+            ></span>
+          </div>
+        </div>
+
+        <!-- Card Page -->
+        <div class="card main-card" style="opacity: 0">
+          <div class="card-body">
+            <div id="icon-wrap" class="center-div">
+              <img id="icon" src="" alt="" />
+              <h1 id="temp"></h1>
+            </div>
+
+            <h6 class="center-div" id="description" class="card-subtitle"></h6>
+            <h1 id="location" class="card-title center-div"></h1>
+
+            <div>
+              <h5 id="country" class="center-div"></h5>
+
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="card small-cards">
+                    <i class="bi bi-moisture"></i>
+                    <h5 class="title center-div">
+                      <i class="ic fa-solid fa-sun"></i> UV Index
+                    </h5>
+                    <h6 id="uv" class="center-div"></h6>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="card small-cards">
+                    <h5 class="title center-div">
+                      <i class="ic fa-solid fa-droplet"></i>Humidity
+                    </h5>
+                    <h6 id="humidity" class="center-div"></h6>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="card small-cards">
+                    <h5 class="title center-div">
+                      <i class="ic fa-solid fa-eye"></i>Visibility
+                    </h5>
+                    <h6 id="visibility" class="center-div"></h6>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="card small-cards">
+                    <h5 class="title center-div">
+                      <i class="ic fa-solid fa-wind"></i> Wind
+                    </h5>
+                    <h6 id="wind" class="center-div"></h6>
+                  </div>
+                </div>
+
+                <div
+                  class="center-div"
+                  id="search-bar"
+                  style="opacity: 1"
+                ></div>
+
+                <div
+                  class="form"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <input
+                    id="new-search"
+                    type="search"
+                    name="topic"
+                    placeholder="Search"
+                    class="form-control form-input"
+                    required
+                  />
+                  <span class="left-pan n"
+                    ><i class="submit fa-solid fa-magnifying-glass"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9370e93401.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script src="functions.js"></script>
+    <script src="new-search.js"></script>
+    <script src="apiKey.js"></script>
+  </body>
+</html>
