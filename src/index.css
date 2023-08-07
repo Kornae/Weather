@@ -43,21 +43,13 @@ body {
   }
 
 
-
-  #temp {
-    font-size: 10rem;
-    padding: .5rem;
-    font-weight: bold;
-  }
-
-
   #date-div {
     margin: auto;
   }
 
   #description {
     font-size: 1.1rem;
-    padding: 10px 0px 40px;
+    padding: 10px 0px;
   }
 
   #card-section {
@@ -71,7 +63,7 @@ body {
 
   #days {
     display: flex;
-    padding: 3px;
+    padding: 25px;
   }
 
   #temp-cards {
@@ -107,16 +99,34 @@ body {
 
 }
 
+@media (min-width: 1050px) {
+  #temp {
+    font-size: 8rem;
+    padding: .1rem .5rem 0rem;
+    font-weight: bold;
+  }
+
+}
+
+
 
 @media (max-width: 1049px) {
-  .main-div {
-    background-color: #ffffff;
+  #temp {
+    font-size: 7.5rem;
+          padding: .1rem .5rem 0rem;
+            margin: 0px;
   }
 
-  .two {
-    grid-column: span 2;
-    grid-row: span 1;
+  .main-div {
+    background-color: #eeeeee;
   }
+
+    .two {
+      grid-column: span 2;
+      grid-row: span 1;
+        border-radius: 40px 40px 0px 0px;
+      padding-top: 20px;
+    }
 
   #city-div {
     margin: auto 0px auto 0px;
@@ -129,14 +139,23 @@ body {
 }
 
 @media (max-width: 767px) {
-  .main-div {
-    width: 100vw;
+  #temp {
+    font-size: 6.5rem;
+        padding: .1rem .5rem 0rem;
+        margin: 0px ;
   }
 
+
+  .main-div {
+    width: 100vw;
+    background-color: #eeeeee;
+  }
 
   .two {
     grid-column: span 2;
     grid-row: span 1;
+    border-radius: 40px 40px 0px 0px;
+    padding-top: 20px;
   }
 
   #city-div {
