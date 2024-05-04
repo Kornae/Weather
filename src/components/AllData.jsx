@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MainContent from "./MainContent";
-import CardContent from './CardContent';
+import WeatherCards from "./CardContent";
 
 export default function AllData() {
     const [weatherData, setWeatherData] = useState([])
@@ -98,7 +98,7 @@ export default function AllData() {
 
             </div>
             <div id='main-2' className='two'>
-                <CardContent
+                <WeatherCards
                     change={handleChange}
                     click={handleClick}
                     uv={uv}
